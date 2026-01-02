@@ -245,7 +245,234 @@
       <div>© <span id="year"></span> Vinay Nandurdikar</div>
     </footer>
   </main>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinay Nandurdikar | CAE / CFD Portfolio</title>
+  <meta name="description" content="Portfolio of CAE/CFD projects, certificates, tools, and learning notes by Vinay Nandurdikar." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <div class="avatar">VN</div>
+        <div class="brand-text">
+          <div class="name">Vinay Nandurdikar</div>
+          <div class="role">Senior CAE / CFD Engineer</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="themeBtn" class="btn ghost" type="button" aria-label="Toggle theme">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <h1>CAE / CFD Portfolio</h1>
+          <p class="lead">
+            I showcase my CAE/CFD skills, simulation projects, certificates, and learning notes here.
+            I will keep updating this website as I complete more courses and projects.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#certificates">View Certificates</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="kpi">
+            <div class="kpi-title">Focus Areas</div>
+            <div class="kpi-list">
+              <span>ANSYS Fluent</span>
+              <span>OpenFOAM</span>
+              <span>STAR-CCM+</span>
+              <span>VOF / DPM</span>
+              <span>Meshing</span>
+              <span>Automation</span>
+            </div>
+          </div>
+          <div class="small muted">
+            Tip: Upload files into <code>assets/certificates/</code> and update only <code>script.js</code> list.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="grid3">
+          <div class="card">
+            <h3>CFD / Multiphase</h3>
+            <ul>
+              <li>ANSYS Fluent</li>
+              <li>OpenFOAM</li>
+              <li>STAR-CCM+</li>
+              <li>VOF / DPM (learning + practice)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Pre/Post & Meshing</h3>
+            <ul>
+              <li>ANSYS Mesher</li>
+              <li>ParaView</li>
+              <li>HyperMesh / ANSA (learning)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>MATLAB</li>
+              <li>C++ (basics)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="muted">
+          Add projects tool-wise (Fluent / OpenFOAM / STAR-CCM+). You can upload PDFs/images under
+          <code>assets/projects/...</code> later.
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>ANSYS Fluent</h3>
+            <p class="muted">Add your CFD cases, reports, plots, and learnings.</p>
+            <ul class="bullets">
+              <li>Desuperheater / Attemperator (VOF → DPM)</li>
+              <li>Control valve pressure drop & unsteady flow</li>
+              <li>Thermal mixing / temperature uniformity</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>OpenFOAM</h3>
+            <p class="muted">Add your solver setups, case studies, and validation notes.</p>
+            <ul class="bullets">
+              <li>AAA haemodynamics (pulsatile flow)</li>
+              <li>Laminar vs turbulence comparisons</li>
+              <li>Automation scripts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="wrap">
+        <div class="row-between">
+          <div>
+            <h2>Certificates</h2>
+            <p class="muted">Click a card to open the PDF/image. Files live in <code>assets/certificates/</code>.</p>
+          </div>
+
+          <div class="search">
+            <input id="certSearch" type="search" placeholder="Search certificates (e.g., Fluent, NPTEL, MATLAB)" />
+          </div>
+        </div>
+
+        <div id="certGrid" class="cert-grid"></div>
+      </div>
+    </section>
+
+    <section id="notes" class="section alt">
+      <div class="wrap">
+        <h2>Notes</h2>
+        <p class="muted">
+          Later you can upload your notes as PDFs into <code>assets/notes/</code> and list them here (same way as certificates).
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>What I’m Learning</h3>
+            <ul class="bullets">
+              <li>Multiphase modelling workflow (VOF / DPM)</li>
+              <li>Turbulence modelling (practical)</li>
+              <li>Meshing quality + automation</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Coming Soon</h3>
+            <ul class="bullets">
+              <li>Course-wise learnings (1 page per certificate)</li>
+              <li>Tool-wise project pages</li>
+              <li>Downloadable notes PDFs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Details</h3>
+            <p class="muted">Update these anytime.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <span id="emailText">your.email@example.com</span></li>
+              <li><strong>LinkedIn:</strong> <a href="#" id="linkedinLink" target="_blank" rel="noreferrer">Add your link</a></li>
+              <li><strong>Location:</strong> Nashik, Maharashtra, India</li>
+            </ul>
+
+            <div class="row">
+              <button class="btn" id="copyEmailBtn" type="button">Copy Email</button>
+              <a class="btn ghost" id="sendEmailBtn" href="mailto:your.email@example.com">Send Email</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Quick Message (UI only)</h3>
+            <p class="muted">This form is only for display (GitHub Pages is static).</p>
+            <div class="form">
+              <label>Name</label>
+              <input placeholder="Your name" />
+              <label>Email</label>
+              <input placeholder="you@example.com" />
+              <label>Message</label>
+              <textarea placeholder="Write message..."></textarea>
+              <button class="btn ghost" type="button" disabled>Submit</button>
+              <div class="small muted">To make it real later, we can connect Google Forms / Formspree.</div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div>© <span id="year"></span> Vinay Nandurdikar</div>
+          <a class="muted" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+        </footer>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
